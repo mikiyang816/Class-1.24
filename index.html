@@ -1,17 +1,42 @@
-<body>
-  <script>
 
-    function randomColor () {
-      const r = Math.random() * 255 //render value between 0 and 1; we want the range to be in 0-255
-    	const g = Math.random() * 255 //g for green
-      const b = Math.random() * 255 //b for blue
-      const color = `rgb(${r}, ${g}, ${b})`//` tickmarks- ` we have to differentiate between the letter r and the variable r
-    	return color // you have to return to let the randomColor () render things
-    }
-    
-    document.body.style.backgroundColor = randomColor()
-
-    
+<style>
+  body {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   
-  </script>
-</body>
+  div {
+    color: white;
+    font-size: 20vw;
+    front-family: Futura;
+  }
+  
+</style>
+
+<div> hello </div>
+
+<script>
+
+function onKawara () {
+  document.body.style.backgroundColor = 'black'
+  document.body.style.display = 'grid'
+  document.body.style.JustifyContent = 'center'
+  document.body.style.alignItems = 'center'
+  document.body.style.height = '100vh'
+  
+  const div = document.createElement ('div') //create a html from scratch
+	div.textContent = 'hello'
+  div.style.color = 'white'
+  div.style.fontSize = '20vw'
+  div.style.fontFamily = 'Futura'
+  
+  document.body.appendChild(div)
+  }
+
+
+
+</script>
+
