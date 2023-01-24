@@ -1,3 +1,4 @@
+<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
 <script>
 //Onkarawa project 
   
@@ -7,34 +8,19 @@ function onKawara () {
   document.body.style.JustifyContent = 'center'
   document.body.style.alignItems = 'center'
   document.body.style.height = '100vh'
-  
-  const d = new Date() //d for date
-  const day = d.getDate()
-  const m = d.getMonth ()
-  const month = months[m] // when write down d.getMonth()- you get 0, because January is the 0th month of the year
-  const year = d.getFullYear()
-  
-  const month = ['Jan', 'Feb', 'March', 'April', 
-                  'May', 'June', 'July', 'Aug', 'Sep', 
-                  'Oct', 'Nov', 'Dec']
-               //[] is an array/list/vector, a list of values/variables
-  
- // if (m ===0 ){
- //   month = 'Jan'
- // } else if (m===1) {
- //   month = 'Feb'
-//  }
+
   
   const div = document.createElement ('div') //create a html from scratch
-	div.textContent = `${month}. ${day}, ${year}` // or day + ',' + year
+  div.textContent = moment ().format('MMM DD, YYYY')// or day + ',' + year
   div.style.color = 'white'
   div.style.fontSize = '10vw'
   div.style.fontFamily = 'Futura'
-  
   document.body.appendChild(div)
   }
   
  window.addEventListener ('load', onKawara)//once the page loads, run the function "Onkawara"
 
+
 </script>
+
 
