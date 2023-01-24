@@ -10,11 +10,21 @@ function onKawara () {
   
   const d = new Date() //d for date
   const day = d.getDate()
-  const month = d.getMonth() + 1 // when write down d.getMonth()- you get 0, because January is the 0th month of the year
+  const m = d.getMonth() + 1 // when write down d.getMonth()- you get 0, because January is the 0th month of the year
+  let month
   const year = d.getFullYear()
   
+  const months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+               //[] is an array/list/vector, a list of values/variables
+  
+ // if (m ===0 ){
+ //   month = 'Jan'
+ // } else if (m===1) {
+ //   month = 'Feb'
+//  }
+  
   const div = document.createElement ('div') //create a html from scratch
-	div.textContent = `${month}, ${day}, ${year}` // or day + ',' + year
+	div.textContent = `${months[2]}, ${day}, ${year}` // or day + ',' + year
   div.style.color = 'white'
   div.style.fontSize = '10vw'
   div.style.fontFamily = 'Futura'
