@@ -2,19 +2,14 @@
   <script>
 
     function randomColor () {
-    //Method 2: i want to create a function to expressrandom color
-    }
-    
-    const randomColor = function (
-    //Method 2: i want to create a function to expressrandom color
-    )
-    
-    const randomColor = () => {
-    //Method 3: arrow function
-    }
+      const r = Math.random() * 255 //render value between 0 and 1; we want the range to be in 0-255
+    	const g = Math.random() * 255 //g for green
+      const b = Math.random() * 255 //b for blue
+      const color = `rgb(${r}, ${g}, ${b})`//` tickmarks- ` we have to differentiate between the letter r and the variable r
+    ]
     
     document.body.style.backgroundColor = 'red'
-    
+
     
   
   </script>
