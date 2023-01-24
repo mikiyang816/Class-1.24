@@ -14,9 +14,9 @@ function onKawara () {
   const year = d.getFullYear()
   
   const div = document.createElement ('div') //create a html from scratch
-	div.textContent = year
+	div.textContent = `${day}, ${year}` // or day + ',' + year
   div.style.color = 'white'
-  div.style.fontSize = '20vw'
+  div.style.fontSize = '10vw'
   div.style.fontFamily = 'Futura'
   
   document.body.appendChild(div)
