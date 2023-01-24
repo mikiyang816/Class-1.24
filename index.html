@@ -1,5 +1,6 @@
 <script>
-
+//Onkarawa project 
+  
 function onKawara () {
   document.body.style.backgroundColor = 'black'
   document.body.style.display = 'grid'
@@ -7,8 +8,13 @@ function onKawara () {
   document.body.style.alignItems = 'center'
   document.body.style.height = '100vh'
   
+  const d = new Date() //d for date
+  const day = d.getDate()
+  //const month 
+  const year = d.getFullYear()
+  
   const div = document.createElement ('div') //create a html from scratch
-	div.textContent = 'hello'
+	div.textContent = year
   div.style.color = 'white'
   div.style.fontSize = '20vw'
   div.style.fontFamily = 'Futura'
